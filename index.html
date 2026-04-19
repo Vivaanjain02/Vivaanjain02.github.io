@@ -430,7 +430,7 @@
     @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-12px); } }
     @keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
 
-    /* MOBILE */
+    /* TABLET */
     @media (max-width: 900px) {
       nav { padding: 18px 24px; }
       .nav-links { gap: 18px; }
@@ -439,9 +439,67 @@
       section { padding: 80px 24px; }
       .about-grid, .skills-grid, .certs-grid, .contact-grid { grid-template-columns: 1fr; }
       .project-card { grid-template-columns: 1fr; }
+      .flow-col { display: none; }
       footer { padding: 24px; flex-direction: column; gap: 8px; text-align: center; }
       body { cursor: auto; }
       .cursor, .cursor-ring { display: none; }
+    }
+
+    /* MOBILE */
+    @media (max-width: 540px) {
+      nav { padding: 14px 18px; }
+      .nav-links { gap: 10px; }
+      .nav-links a { font-size: 0.65rem; letter-spacing: 0.06em; }
+      .nav-logo { font-size: 0.95rem; }
+
+      .hero { padding: 90px 18px 48px; gap: 36px; }
+      .hero h1 { font-size: 3rem; }
+      .hero-eyebrow { font-size: 0.65rem; margin-bottom: 18px; }
+      .hero-desc { font-size: 0.92rem; }
+      .hero-actions { flex-direction: column; gap: 12px; }
+      .btn-primary, .btn-ghost { width: 100%; justify-content: center; padding: 14px 20px; }
+      .hero-stats { gap: 24px; margin-top: 36px; }
+      .stat-num { font-size: 1.8rem; }
+      .stat-label { font-size: 0.65rem; }
+
+      .hero-card { padding: 20px; border-radius: 12px; }
+      .card-row { padding: 10px 0; }
+      .card-key, .card-val { font-size: 0.75rem; }
+      .resume-btn { padding: 10px 16px; font-size: 0.72rem; }
+
+      section { padding: 60px 18px; }
+      .section-title { font-size: 1.7rem; margin-bottom: 36px; }
+
+      .about-grid { gap: 32px; }
+      .about-text p { font-size: 0.9rem; }
+      .about-card { padding: 20px; }
+
+      .skills-grid { gap: 14px; }
+      .skill-card { padding: 20px; }
+      .skill-name { font-size: 0.9rem; }
+      .skill-tag { font-size: 0.68rem; padding: 4px 10px; }
+
+      .project-card { padding: 22px; margin-bottom: 14px; }
+      .project-title { font-size: 1.1rem; }
+      .project-desc { font-size: 0.85rem; }
+      .stack-tag { font-size: 0.65rem; }
+      .project-link { font-size: 0.72rem; }
+
+      .certs-grid { gap: 14px; }
+      .cert-card { padding: 18px; }
+      .cert-title { font-size: 0.88rem; }
+      .cert-desc { font-size: 0.76rem; }
+
+      .contact-grid { gap: 14px; }
+      .contact-card { padding: 20px; }
+      .contact-type { font-size: 0.8rem; }
+      .contact-val { font-size: 0.8rem; }
+
+      .marquee-item { font-size: 0.65rem; padding: 0 24px; }
+
+      footer { padding: 20px 18px; }
+      .footer-logo { font-size: 0.9rem; }
+      .footer-copy { font-size: 0.7rem; }
     }
   </style>
 </head>
